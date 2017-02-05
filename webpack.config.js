@@ -17,7 +17,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /(node_modules|bower_components)/,
         query: {
           presets: 'es2015'
@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'string-replace',
+        loader: 'string-replace-loader',
         exclude: /(node_modules|bower_components)/,
         query: {
           multiple: [
